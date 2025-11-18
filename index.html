@@ -1,157 +1,278 @@
 <!DOCTYPE html>
+
+
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Noticd</title>
+
     <style>
+
         * {
+
             margin: 0;
+
             padding: 0;
+
             box-sizing: border-box;
+
         }
 
         body {
+
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
             min-height: 100vh;
+
             background-image: url('background_gradient.jpg');
+
             background-size: cover;
+
             background-position: center;
+
             background-repeat: no-repeat;
+
             background-attachment: fixed;
+
             display: flex;
+
             flex-direction: column;
+
             align-items: center;
+
             justify-content: center;
+
             padding: 40px 20px;
+
             color: #FFFFFF;
+
         }
 
         .container {
+
             max-width: 600px;
+
             width: 100%;
+
             text-align: center;
+
             animation: fadeIn 0.8s ease-out;
+
         }
 
         @keyframes fadeIn {
+
             from {
+
                 opacity: 0;
+
                 transform: translateY(20px);
+
             }
+
             to {
+
                 opacity: 1;
+
                 transform: translateY(0);
+
             }
+
         }
 
         .logo {
+
             width: 200px;
+
             height: auto;
+
             margin: 0 auto 16px;
+
             filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.2));
+
             animation: float 3s ease-in-out infinite;
+
         }
 
         @keyframes float {
+
             0%, 100% {
+
                 transform: translateY(0px);
+
             }
+
             50% {
+
                 transform: translateY(-10px);
+
             }
+
         }
 
         h1 {
+
             font-size: 48px;
+
             font-weight: 700;
+
             margin-bottom: 16px;
+
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
             letter-spacing: -0.5px;
+
         }
 
         .tagline {
+
             font-size: 20px;
+
             font-weight: 400;
+
             margin-bottom: 48px;
+
             opacity: 0.95;
+
             text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+
         }
 
         .links-container {
+
             display: flex;
+
             flex-direction: column;
+
             gap: 16px;
+
             margin-top: 48px;
+
         }
 
         .link-button {
+
             display: inline-block;
+
             padding: 16px 32px;
+
             background-color: rgba(255, 255, 255, 0.2);
+
             backdrop-filter: blur(10px);
+
             border: 2px solid rgba(255, 255, 255, 0.3);
+
             border-radius: 16px;
+
             color: #FFFFFF;
+
             text-decoration: none;
+
             font-size: 16px;
+
             font-weight: 600;
+
             transition: all 0.3s ease;
+
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
         }
 
         .link-button:hover {
+
             background-color: rgba(255, 255, 255, 0.3);
+
             border-color: rgba(255, 255, 255, 0.5);
+
             transform: translateY(-2px);
+
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
         }
 
         .link-button:active {
+
             transform: translateY(0);
+
         }
 
         .footer {
+
             margin-top: 64px;
+
             font-size: 14px;
+
             opacity: 0.8;
+
         }
 
         @media (max-width: 768px) {
+
             h1 {
+
                 font-size: 36px;
+
             }
 
             .tagline {
+
                 font-size: 18px;
+
             }
 
             .logo {
+
                 width: 150px;
+
             }
 
             .link-button {
+
                 padding: 14px 28px;
+
                 font-size: 15px;
+
             }
+
         }
+
     </style>
+
 </head>
+
 <body>
+
     <div class="container">
+
         <img src="logo_white.png" alt="Noticd Logo" class="logo" />
+
         
+
         <h1>Noticd</h1>
 
         <div class="links-container">
+
             <a href="terms.html" class="link-button">Terms of Service</a>
+
             <a href="privacy.html" class="link-button">Privacy Policy</a>
+
         </div>
 
         <div class="footer">
-            <p>© 2025 Noticd</p>
+
+            <p>© 2025 Noticd™</p>
+
         </div>
+
     </div>
+
 </body>
+
 </html>
 
