@@ -50,9 +50,26 @@
             margin-top: 48px;
             margin-bottom: 16px;
         }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 32px;
+            color: #0091CF;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+        }
+        .back-link:hover {
+            opacity: 0.7;
+        }
+        .back-link::before {
+            content: "← ";
+            margin-right: 4px;
+        }
     </style>
 </head>
 <body>
+    <a href="index.html" class="back-link">Back to Home</a>
     <h1>Noticd Privacy Policy</h1>
     <p class="effective-date">Effective Date: November 18th, 2025</p>
     
